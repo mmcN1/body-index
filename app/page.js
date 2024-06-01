@@ -42,8 +42,8 @@ export default function Home() {
           Body App
         </Link>
       </section>
-      <section className="font-sans flex justify-around items-center min-h-screen p-2">
-        <section className="w-1/3 hover:bg-[#DAD3BE] transition-all hover:text-gray-700 duration-500  rounded p-2">
+      <section className="font-sans flex flex-col lg:flex-row justify-around items-center min-h-screen p-2">
+        <section className="w-full mb-2 text-sm lg:text-base lg:w-1/3 hover:bg-[#DAD3BE] transition-all hover:text-gray-700 duration-500  rounded p-2">
           <Link href="/Bmi">
             <h1 className="text-xl font-bold p-2 ">BMI Introduction</h1>
             <p>
@@ -62,7 +62,7 @@ export default function Home() {
             </p>
           </Link>
         </section>
-        <section className="w-1/3 hover:bg-[#DAD3BE] transition-all hover:text-gray-700 duration-500 rounded p-2">
+        <section className="w-full mb-2 text-sm lg:text-base lg:w-1/3 hover:bg-[#DAD3BE] transition-all hover:text-gray-700 duration-500 rounded p-2">
           <Link href="/Body">
             <h1 className="text-xl font-bold p-2">Body Fat</h1>
             <p>
