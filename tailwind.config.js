@@ -1,3 +1,5 @@
+const { transform } = require('next/dist/build/swc');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'sans': [' "Courier New", serif'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -14,13 +19,18 @@ module.exports = {
       },
       keyframes: {
         wiggle: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        }
+          "0%": { opacity: "0", transform: "translateY(300px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        end: {
+          "0%": { opacity: "1" },
+          "100%": { opacity: "0" },
+        },
       },
       animation: {
-        wiggle: 'wiggle 4s ease-in-out ',
-      }
+        wiggle: "wiggle 2s ease-linear ",
+        end: "end 2s forwards",
+      },
     },
   },
   plugins: [],
