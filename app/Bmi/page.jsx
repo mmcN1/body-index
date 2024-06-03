@@ -16,6 +16,7 @@ export default function Page() {
     age: "",
     gender: "",
   });
+  const [message, setMessage] = useState(null);
 
   const handleSubmit = () => {
     const { height, weight, age, gender } = person;
