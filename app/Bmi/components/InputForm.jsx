@@ -47,7 +47,6 @@ const InputForm = ({ handleChange, person }) => {
             value="male"
             name="gender"
             onClick={() => handleChange("gender", "male")}
-            inputMode="numeric"
           />
           <input
             className={`p-2 rounded w-4/5 text-gray-800 ring-slate-800 focus:ring-blue-500 focus:ring-2 focus:ring-offset-2 ring-1 ${
@@ -57,7 +56,6 @@ const InputForm = ({ handleChange, person }) => {
             value="female"
             name="gender"
             onClick={() => handleChange("gender", "female")}
-            inputMode="numeric"
           />
         </div>
       </label>
