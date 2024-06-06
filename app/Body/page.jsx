@@ -65,6 +65,12 @@ export default function Page() {
         long: "You have a healthy and balanced body fat percentage. This level is key to overall health and well-being. This level of body fat is common for many people. With a slightly more active lifestyle and balanced diet, you can lower this percentage.",
         percentage: bodyFatPercentage.toFixed(2),
       });
+    }else if (bodyFatPercentage > 25) {
+      setMessage({
+        brief: "High",
+        long: "Lowering your body fat percentage will be beneficial for your health. You can make a big difference by starting with small steps. Taking steps to reduce your body fat percentage is a great decision for your health. Small changes can have significant impacts.",
+        percentage: bodyFatPercentage.toFixed(2),
+      });
     }
 
     setBodyFat({
