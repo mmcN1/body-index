@@ -48,7 +48,7 @@ export default function Page() {
           long: "Your body mass index is within a healthy range, indicating that you are at an ideal weight. Continue with balanced nutrition and regular exercise to maintain this healthy state. This will support your long-term health and overall quality of life. It's important to maintain your healthy habits. Congratulations on maintaining a healthy lifestyle!",
           symbol: Normal,
         });
-      } else if (resultNum > 23) {
+      } else if (resultNum < 28) {
         setMessage({
           brief: "OverWeight",
           long: "Your body mass index is high, indicating that you are above a healthy weight. You should aim to manage your weight through a healthy diet and regular physical activity. Weight control is important for heart health and overall quality of life. Small but consistent changes can make a big difference. Consider seeking support from a nutritionist or dietitian.",
