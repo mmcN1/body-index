@@ -57,7 +57,7 @@ export default function Page() {
       } else {
         setMessage({
           brief: "Your thin",
-          long: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+          long: "Your body mass index is low, indicating that you are under a healthy weight. You should aim to gain weight through a balanced and nutritious diet. Additionally, consulting a healthcare professional to create a personalized nutrition plan can be beneficial. It's important to maintain your energy levels and overall health. Remember to monitor your healthy weight gain with regular check-ups.",
           symbol: Obesity,
         });
       }
@@ -83,7 +83,7 @@ export default function Page() {
       } else {
         setMessage({
           brief: "Obesity",
-          long: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+          long: "Your body mass index is in the obese category, indicating that you carry significant health risks. It's important to start a diet and exercise program to protect your health. Getting support from a professional healthcare provider to create a personalized plan can be beneficial. Obesity increases the risk of heart disease, diabetes, and other serious health issues. You can reduce this risk with healthy lifestyle changes.",
           symbol: Obesity,
         });
       }
