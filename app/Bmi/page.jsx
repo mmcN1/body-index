@@ -56,13 +56,20 @@ export default function Page() {
         });
       } else {
         setMessage({
-          brief: "Your thin",
+          brief: "Obesity",
           long: "Your body mass index is low, indicating that you are under a healthy weight. You should aim to gain weight through a balanced and nutritious diet. Additionally, consulting a healthcare professional to create a personalized nutrition plan can be beneficial. It's important to maintain your energy levels and overall health. Remember to monitor your healthy weight gain with regular check-ups.",
           symbol: Obesity,
         });
       }
     } else {
-      if (resultNum < 20) {
+      if(resultNum < 16) {
+        setMessage({
+          brief: "Your thin",
+          long: "Your body mass index is in the obese category, indicating that you carry significant health risks. It's important to start a diet and exercise program to protect your health. Getting support from a professional healthcare provider to create a personalized plan can be beneficial. Obesity increases the risk of heart disease, diabetes, and other serious health issues. You can reduce this risk with healthy lifestyle changes.",
+          symbol: Obesity,
+        });
+      }
+      else if (resultNum < 20) {
         setMessage({
           brief: "UnderWeight",
           long: "Your body mass index is low, indicating that you are under a healthy weight. You should aim to gain weight through a balanced and nutritious diet. Additionally, consulting a healthcare professional to create a personalized nutrition plan can be beneficial. It's important to maintain your energy levels and overall health. Remember to monitor your healthy weight gain with regular check-ups.",
