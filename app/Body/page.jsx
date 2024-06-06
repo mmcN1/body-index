@@ -95,6 +95,7 @@ export default function Page() {
         </Link>
       </section>
       <section className="font-sans flex  flex-col items-center p-2 animate-[wiggle_1s_ease-out]">
+        Body Fat
         {submitForm && (
           <div
             className={`w-full md:w-4/5 bg-[#DAD3BE] p-2 rounded ${
